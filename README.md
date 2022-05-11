@@ -13,10 +13,10 @@ da Python week e programar junto com o Bruno e o Jeferson.
 
 ## Obtendo seu repositório
 
-01. Faça login no github (cadastre-se gratuitamente caso ainda não tenha uma conta)
-00. Crie um **fork** (cópia) deste repositório clicando em [fork](https://github.com/rochacbruno/python-week-2022/fork)
-00. O seu repositório estará em https:// github.com / SEUNOME / python-week-2022
-00. Copie a URL do seu repositório (você vai precisar depois)
+1.  Faça login no github (cadastre-se gratuitamente caso ainda não tenha uma conta)
+2.  Crie um **fork** (cópia) deste repositório clicando em [fork](https://github.com/rochacbruno/python-week-2022/fork)
+3.  O seu repositório estará em https:// github.com / SEUNOME / python-week-2022
+4.  Copie a URL do seu repositório (você vai precisar depois)
 
 ## Preparando o ambiente
 
@@ -81,7 +81,6 @@ python -m beerlog
 
 Se apareceu `Hello from beerlog` então está tudo certo.
 
-
 ## Está com problemas com instalação ou autocomplete no gitpod?
 
 ### Poetry
@@ -101,8 +100,9 @@ Ou execute `source start_poetry` que é um script que automatiza os comandos aci
 Após ativar o poetry digite no terminal
 
 ```
-which python 
+which python
 ```
+
 A saida será algo como
 
 ```
@@ -115,3 +115,11 @@ Agora digite `F1` no gitpod ou `Ctrl + Shift + P` no Vscode local e selectione a
 Cole o path `/home/gitpod/.cache/pypoetry/virtualenvs/beerlog-DlEBh_72-py3.8/bin/python` e digite enter.
 
 > **OBS**: Pode ser que o caminho seja outro, o importante é terminar com `/bin/python`
+
+## Executar
+
+### Execute FastApi server
+
+```
+uvicorn beerlog.api:api --reload
+```
