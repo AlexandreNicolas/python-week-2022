@@ -1,6 +1,4 @@
-from nis import cat
-from typing import Optional, List
-import sqlalchemy
+from typing import List
 from sqlmodel import select
 from beerlog.database import get_session
 from beerlog.models import Beer
